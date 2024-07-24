@@ -1,0 +1,15 @@
+<Window x:Class="WpfMefApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MEF WPF App" Height="350" Width="525"
+        xmlns:viewmodels="clr-namespace:WpfMefApp.ViewModels">
+    <StackPanel>
+        <ItemsControl ItemsSource="{Binding Buttons}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding Name}" Command="{Binding Command}" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</Window>
