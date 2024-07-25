@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Plugin2Window" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="Plugin 2 Window" FontSize="21" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Plugin 2 Window Test Delete" FontSize="21" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

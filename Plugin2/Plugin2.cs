@@ -1,4 +1,4 @@
-﻿using MefApp.sdk;
+﻿using MefApp.sdk.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace Plugin2
 		// IsVisible property
 		public bool IsVisible { get; private set; }
 
-		public string Name => "Example 2 Plugin";
+		public string Name => "Example Plugin 2";
 
 		public void Execute()
 		{
@@ -39,5 +39,11 @@ namespace Plugin2
 				_plugin1Window.Activate(); // Bring to front if already visible
 			}
 		}
+
+		public void Close() 
+		{
+			_plugin1Window.Close();
+		}
+
 	}
 }

@@ -1,4 +1,4 @@
-﻿using MefApp.sdk;
+﻿using MefApp.sdk.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +8,14 @@ using System.Windows;
 
 namespace Plugin1
 {
-	internal class Plugin1 : IPlugin
+    internal class Plugin1 : IPlugin
 	{
 		private Plugin1Window _plugin1Window;
 
 		// IsVisible property
 		public bool IsVisible { get; private set; }
 
-		public string Name => "Example 1 Plugin";
+		public string Name => "Example Plugin 1";
 
 		public void Execute()
 		{
@@ -38,6 +38,11 @@ namespace Plugin1
 			{
 				_plugin1Window.Activate(); // Bring to front if already visible
 			}
+		}
+
+		public void Close() 
+		{
+			_plugin1Window.Close();
 		}
 	}
 }
