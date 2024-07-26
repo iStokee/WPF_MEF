@@ -13,7 +13,6 @@ namespace WPF_MEF
 	/// </summary>
 	public partial class App : Application
 	{
-
 		public App()
 		{
 			var assemblies = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.dll")
